@@ -1,0 +1,98 @@
+Watchdog 2024/03/27 18:52:48 (INFO): using "/Users/sergiuleu/Developer/test_tarantool/tarantool/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2024-03-27 18:52:48.627 [64880] main/103/interactive I> Tarantool 3.0.1-0-g31c2ddb Darwin-arm64-Release
+2024-03-27 18:52:48.628 [64880] main/103/interactive I> log level 5 (INFO)
+2024-03-27 18:52:48.628 [64880] main/103/interactive I> wal/engine cleanup is paused
+2024-03-27 18:52:48.628 [64880] main/103/interactive I> mapping 268435456 bytes for memtx tuple arena...
+2024-03-27 18:52:48.628 [64880] main/103/interactive I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2024-03-27 18:52:48.628 [64880] main/103/interactive I> mapping 134217728 bytes for vinyl tuple arena...
+2024-03-27 18:52:48.630 [64880] main/103/interactive I> update replication_synchro_quorum = 1
+2024-03-27 18:52:48.630 [64880] main/103/interactive I> instance uuid 306428c9-94b1-4698-8116-e3585f120e83
+2024-03-27 18:52:48.630 [64880] main/103/interactive I> tx_binary: bound to 127.0.0.1:3301
+2024-03-27 18:52:48.630 [64880] main/103/interactive I> initializing an empty data directory
+2024-03-27 18:52:48.655 [64880] main/103/interactive I> assigned id 1 to replica 306428c9-94b1-4698-8116-e3585f120e83
+2024-03-27 18:52:48.655 [64880] main/103/interactive I> update replication_synchro_quorum = 1
+2024-03-27 18:52:48.655 [64880] main/103/interactive I> assigned name instance001 to replica 306428c9-94b1-4698-8116-e3585f120e83
+2024-03-27 18:52:48.655 [64880] main/103/interactive I> replicaset uuid ed2d6f7d-cb55-4330-8008-34a7d3443778
+2024-03-27 18:52:48.655 [64880] main/103/interactive I> replicaset name: replicaset001
+2024-03-27 18:52:48.655 [64880] snapshot/101/main I> saving snapshot `/Users/sergiuleu/Developer/test_tarantool/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000000.snap.inprogress'
+2024-03-27 18:52:48.656 [64880] snapshot/101/main I> done
+2024-03-27 18:52:48.656 [64880] main/103/interactive I> ready to accept requests
+2024-03-27 18:52:48.656 [64880] main/105/gc I> wal/engine cleanup is resumed
+2024-03-27 18:52:48.656 [64880] main/103/interactive/box.load_cfg I> set 'custom_proc_title' configuration option to "tarantool - instance001"
+2024-03-27 18:52:48.656 [64880] main/103/interactive/box.load_cfg I> set 'instance_name' configuration option to "instance001"
+2024-03-27 18:52:48.656 [64880] main/103/interactive/box.load_cfg I> set 'log_nonblock' configuration option to false
+2024-03-27 18:52:48.656 [64880] main/103/interactive/box.load_cfg I> set 'replicaset_name' configuration option to "replicaset001"
+2024-03-27 18:52:48.656 [64880] main/103/interactive/box.load_cfg I> set 'listen' configuration option to [{"uri":"127.0.0.1:3301"}]
+2024-03-27 18:52:48.656 [64880] main/103/interactive/box.load_cfg I> set 'metrics' configuration option to {"labels":{"alias":"instance001"},"include":["all"],"exclude":[]}
+2024-03-27 18:52:48.656 [64880] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 27 20:06:44 2024
+2024-03-27 18:52:48.656 [64880] main I> entering the event loop
+2024-03-27 20:02:27.993 [64880] main/154/console/unix/: C> Potentially long select from space 'customers2' (513)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function <builtin/box/schema.lua:2468>
+	[C]: in function 'pcall'
+	builtin/box/console.lua:427: in function <builtin/box/console.lua:400>
+	[string "local function func(...) return require('cons..."]:1: in main chunk
+	[C]: in function 'pcall'
+	builtin/box/console.lua:427: in function 'eval'
+	builtin/box/console.lua:819: in function 'repl'
+	builtin/box/console.lua:988: in function <builtin/box/console.lua:974>
+	[C]: in function 'pcall'
+	builtin/socket.lua:1138: in function <builtin/socket.lua:1136>
+2024-03-27 20:06:44.663 [64880] snapshot/101/main I> saving snapshot `/Users/sergiuleu/Developer/test_tarantool/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000007.snap.inprogress'
+2024-03-27 20:06:44.665 [64880] snapshot/101/main I> done
+2024-03-27 20:06:44.666 [64880] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 27 21:06:44 2024
+2024-03-27 20:27:39.774 [64880] main/154/console/unix/: C> Potentially long select from space 'customers2' (513)
+ stack traceback:
+	builtin/box/schema.lua:2465: in function 'log_long_select'
+	builtin/box/schema.lua:2482: in function <builtin/box/schema.lua:2468>
+	[C]: in function 'pcall'
+	builtin/box/console.lua:427: in function <builtin/box/console.lua:400>
+	[string "local function func(...) return require('cons..."]:1: in main chunk
+	[C]: in function 'pcall'
+	builtin/box/console.lua:427: in function 'eval'
+	builtin/box/console.lua:819: in function 'repl'
+	builtin/box/console.lua:988: in function <builtin/box/console.lua:974>
+	[C]: in function 'pcall'
+	builtin/socket.lua:1138: in function <builtin/socket.lua:1136>
+2024-03-27 20:32:28.949 [64880] main C> got signal 15 - Terminated: 15
+2024-03-27 20:32:28.953 [64880] main/253/iproto.shutdown I> tx_binary: stopped
+customers space created successfully
+Watchdog 2024/03/27 20:32:29 (INFO): the Instance has shutdown.
+Watchdog 2024/03/27 20:33:40 (INFO): using "/Users/sergiuleu/Developer/test_tarantool/tarantool/instances.enabled/create_db/config.yaml" cluster config for instance "instance001"
+started
+2024-03-27 20:33:40.416 [1477] main/103/interactive I> Tarantool 3.0.1-0-g31c2ddb Darwin-arm64-Release
+2024-03-27 20:33:40.416 [1477] main/103/interactive I> log level 5 (INFO)
+2024-03-27 20:33:40.416 [1477] main/103/interactive I> wal/engine cleanup is paused
+2024-03-27 20:33:40.417 [1477] main/103/interactive I> mapping 268435456 bytes for memtx tuple arena...
+2024-03-27 20:33:40.417 [1477] main/103/interactive I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2024-03-27 20:33:40.417 [1477] main/103/interactive I> mapping 134217728 bytes for vinyl tuple arena...
+2024-03-27 20:33:40.419 [1477] main/103/interactive/box.upgrade I> Recovering snapshot with schema version 3.0.0
+2024-03-27 20:33:40.419 [1477] main/103/interactive I> update replication_synchro_quorum = 1
+2024-03-27 20:33:40.419 [1477] main/103/interactive I> instance uuid 306428c9-94b1-4698-8116-e3585f120e83
+2024-03-27 20:33:40.420 [1477] main/103/interactive I> instance vclock {1: 7}
+2024-03-27 20:33:40.420 [1477] main/103/interactive I> tx_binary: bound to 127.0.0.1:3301
+2024-03-27 20:33:40.420 [1477] main/103/interactive I> recovery start
+2024-03-27 20:33:40.420 [1477] main/103/interactive I> recovering from `/Users/sergiuleu/Developer/test_tarantool/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000007.snap'
+2024-03-27 20:33:40.421 [1477] main/103/interactive I> replicaset name: replicaset001
+2024-03-27 20:33:40.421 [1477] main/103/interactive I> replicaset uuid ed2d6f7d-cb55-4330-8008-34a7d3443778
+2024-03-27 20:33:40.444 [1477] main/103/interactive I> assigned id 1 to replica 306428c9-94b1-4698-8116-e3585f120e83
+2024-03-27 20:33:40.444 [1477] main/103/interactive I> update replication_synchro_quorum = 1
+2024-03-27 20:33:40.444 [1477] main/103/interactive I> assigned name instance001 to replica 306428c9-94b1-4698-8116-e3585f120e83
+2024-03-27 20:33:40.444 [1477] main/103/interactive I> recover from `/Users/sergiuleu/Developer/test_tarantool/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000007.xlog'
+2024-03-27 20:33:40.444 [1477] main/103/interactive I> done `/Users/sergiuleu/Developer/test_tarantool/tarantool/instances.enabled/create_db/var/lib/instance001/00000000000000000007.xlog'
+2024-03-27 20:33:40.444 [1477] main/103/interactive I> ready to accept requests
+2024-03-27 20:33:40.444 [1477] main/103/interactive I> leaving orphan mode
+2024-03-27 20:33:40.444 [1477] main/105/gc I> wal/engine cleanup is resumed
+2024-03-27 20:33:40.444 [1477] main/103/interactive/box.load_cfg I> set 'custom_proc_title' configuration option to "tarantool - instance001"
+2024-03-27 20:33:40.444 [1477] main/103/interactive/box.load_cfg I> set 'instance_name' configuration option to "instance001"
+2024-03-27 20:33:40.444 [1477] main/103/interactive/box.load_cfg I> set 'log_nonblock' configuration option to false
+2024-03-27 20:33:40.444 [1477] main/103/interactive/box.load_cfg I> set 'replicaset_name' configuration option to "replicaset001"
+2024-03-27 20:33:40.444 [1477] main/103/interactive/box.load_cfg I> set 'listen' configuration option to [{"uri":"127.0.0.1:3301"}]
+2024-03-27 20:33:40.444 [1477] main/103/interactive/box.load_cfg I> set 'metrics' configuration option to {"labels":{"alias":"instance001"},"include":["all"],"exclude":[]}
+2024-03-27 20:33:40.444 [1477] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 27 22:31:10 2024
+2024-03-27 20:33:40.453 [1477] main/114/console/unix/: sio.c:315 !> getpeername: Invalid argument
+2024-03-27 20:33:40.454 [1477] main/103/interactive I> update replication_synchro_quorum = 1
+2024-03-27 20:33:40.454 [1477] main/106/checkpoint_daemon I> scheduled next checkpoint for Wed Mar 27 22:26:14 2024
+2024-03-27 20:33:40.455 [1477] main I> entering the event loop
